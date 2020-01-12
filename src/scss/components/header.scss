@@ -30,6 +30,9 @@
         .phone {
           position: relative;
           width: auto;
+          &:hover {
+            color: #fbd341;
+          }
         }
         .phone:before {
           content: "";
@@ -73,6 +76,9 @@
  }
 
  .first_section header .menu {
+   li a:hover {
+     color: #ffffff;
+   }
    .tours {
      position: relative;
      &:before {
@@ -135,6 +141,9 @@
   .services:hover .dropdown-2{
     display: block;
     transition: 0.7s ease;
+  }
+  .dropdown-1 li a:hover, .dropdown-2 li a:hover {
+    color: #fbd341;
   }
  } 
  .first_section header .menu > li > a {
