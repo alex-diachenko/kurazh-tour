@@ -64,7 +64,6 @@
     }
     .fourth_section:before {
         width: 100%;
-        // height: 350px;
         background-size: cover;
     }
     .fourth_section .container form:before {
@@ -115,9 +114,19 @@
     }
     .second_section .owl_second .item {
         flex-direction: column;
-        height: 333px;
+        height: 350px;
         padding-top: 20px;
         text-align: center;
+    }
+    .second_section .owl_second .owl-nav {
+        .owl-prev {
+            top: 375px;
+            left: 38%;
+        }
+        .owl-next {
+            top: 375px;
+            right: 38%;
+        }
     }
 }
 @media screen and (max-width: 400px) {
@@ -128,6 +137,13 @@
             width: auto;
             height: auto;
         } 
+        .social  {
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            width: 35%;
+            text-align: justify;
+        }
     }
     .first_section header .right_part .contacts .phone {
         text-align: center;
@@ -138,7 +154,8 @@
     .first_section .container .proposal {
         top: 400px;
     }
-} 
+}
+ 
 @media screen and (max-width: 378px) {
     .fourth_section .container form input[type="email"], .fourth_section .container form input[type="tel"], .fourth_section .container form input[type="text"], select {
         width: 230px;
